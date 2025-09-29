@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/x-icon" href="health.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="navbar">
+            <nav>
+                <ul>
+                    <li class="gameLogs" onClick="topFunction()">Health</li>
+                    <li class="mainUl" onClick="bottomFunction()">Photos</li>
+                    <!-- Here dark mode -->
+                    <img src="svg/sun.png" id="icon">
+                    <img src="svg/shoppingCartWhite.png" id="iconCart">
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Green_tea" target="_blank">
+                        <img class="gamePhotos" src="images/greenTea.png" alt="Gra 1" data-name="God of War Ragnarok">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">7.99$</p>
+                            <button class="addToCart" data-product="Green Tea" data-price="7.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/White_tea" target="_blank">
+                        <img class="gamePhotos" src="images/whiteTea.png" alt="Gra 2">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">7.99$</p>
+                            <button class="addToCart" data-product="White Tea" data-price="7.99">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Black_tea" target="_blank">
+                        <img class="gamePhotos" src="images/blackTea.png" alt="Gra 3">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">6.99$</p>
+                            <button class="addToCart" data-product="Black Tea" data-price="6.99">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Butterfly_pea_flower_tea" target="_blank">
+                        <img class="gamePhotos" src="images/blueTea.png" alt="Gra 4">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">7.99$</p>
+                            <button class="addToCart" data-product="Blue Tea" data-price="7.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Rooibos" target="_blank">
+                        <img class="gamePhotos" src="images/redTea.png" alt="Gra 5">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">9.99$</p>
+                            <button class="addToCart" data-product="Red Tea" data-price="9.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Matcha" target="_blank">
+                        <img class="gamePhotos" src="images/Matcha.png" alt="Gra 6">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">15.99$</p>
+                            <button class="addToCart" data-product="Matcha" data-price="15.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Coffee" target="_blank">
+                        <img class="gamePhotos" src="images/Coffe.png" alt="Gra 7">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">13.99$</p>
+                            <button class="addToCart" data-product="Coffe" data-price="13.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Yerba_mate" target="_blank">
+                        <img class="gamePhotos" src="images/Yerba.png" alt="Gra 8">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">17.99$</p>
+                            <button class="addToCart" data-product="Yerba Mate" data-price="17.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Basil" target="_blank">
+                        <img class="gamePhotos" src="images/Basil.png" alt="Gra 1">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">5.99$</p>
+                            <button class="addToCart" data-product="Basil" data-price="5.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Chamomile" target="_blank">
+                        <img class="gamePhotos" src="images/Rumianek.png" alt="Gra 2">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">4.99$</p>
+                            <button class="addToCart" data-product="Chamomile" data-price="4.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Chickpea" target="_blank">
+                        <img class="gamePhotos" src="images/chickPea.png" alt="Gra 3">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">3.99$</p>
+                            <button class="addToCart" data-product="Chickpea" data-price="3.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Black_pepper" target="_blank">
+                        <img class="gamePhotos" src="images/blackPepper.png" alt="Gra 4">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">2.99$</p>
+                            <button class="addToCart" data-product="Black Pepper" data-price="2.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Soybean" target="_blank">
+                        <img class="gamePhotos" src="images/soy.png" alt="Gra 1">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">6.99$</p>
+                            <button class="addToCart" data-product="Soy" data-price="6.99">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Thyme" target="_blank">
+                        <img class="gamePhotos" src="images/thyme.png" alt="Gra 2">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">4.99$</p>
+                            <button class="addToCart" data-product="Thyme" data-price="4.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Oregano" target="_blank">
+                        <img class="gamePhotos" src="images/oregano.png" alt="Gra 3">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">5.99$</p>
+                            <button class="addToCart" data-product="Oregano" data-price="5.99">Add to
+                                cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="gameContainer">
+                <div class="game">
+                    <a href="https://en.wikipedia.org/wiki/Cinnamon" target="_blank">
+                        <img class="gamePhotos" src="images/cinnamon.png" alt="Gra 4">
+                    </a>
+                    <div class="containerPriceTitle">
+                        <div class="priceHolder">
+                            <p class="pPrice">9.99$</p>
+                            <button class="addToCart" data-product="Cinnamon" data-price="9.99">Add to cart</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cart">
+                <p id="shopTitle">Shopping Cart</p>
+                <ul id="cartItems"></ul>
+                <p id="totalPriceFinal">Total: <span id="totalPrice">0.00</span>$</p>
+                <button id="checkoutButton">Checkout</button>
+            </div>
+        </section>
+
+    </main>
+    <article id="article">
+        <div class="containerSlider">
+            <div class="sliderWrapper">
+                <button id="previousSlide" class="sliderButton">&lt;</button>
+                <div class="imageList">
+                    <img src="images/slider/1.png" alt="img-1" class="imageItem" onclick="imageOpen1()">
+                    <img src="images/slider/2.png" alt="img-2" class="imageItem" onclick="imageOpen2()">
+                    <img src="images/slider/3.png" alt="img-3" class="imageItem" onclick="imageOpen3()">
+                    <img src="images/slider/4.png" alt="img-4" class="imageItem" onclick="imageOpen4()">
+                    <img src="images/slider/5.png" alt="img-5" class="imageItem" onclick="imageOpen5()">
+                    <img src="images/slider/6.png" alt="img-6" class="imageItem" onclick="imageOpen6()">
+                    <img src="images/slider/7.png" alt="img-7" class="imageItem" onclick="imageOpen7()">
+                    <img src="images/slider/8.png" alt="img-8" class="imageItem" onclick="imageOpen8()">
+                    <img src="images/slider/9.png" alt="img-9" class="imageItem" onclick="imageOpen9()">
+                    <img src="images/slider/10.png" alt="img-10" class="imageItem" onclick="imageOpen10()">
+                    <img src="images/slider/11.png" alt="img-11" class="imageItem" onclick="imageOpen11()">
+                    <img src="images/slider/12.png" alt="img-12" class="imageItem" onclick="imageOpen12()">
+                    <img src="images/slider/13.png" alt="img-13" class="imageItem" onclick="imageOpen13()">
+                    <img src="images/slider/14.png" alt="img-14" class="imageItem" onclick="imageOpen14()">
+                    <img src="images/slider/15.png" alt="img-15" class="imageItem" onclick="imageOpen15()">
+                    <img src="images/slider/16.png" alt="img-16" class="imageItem" onclick="imageOpen16()">
+                    <img src="images/slider/17.png" alt="img-17" class="imageItem" onclick="imageOpen17()">
+                    <img src="images/slider/18.png" alt="img-18" class="imageItem" onclick="imageOpen18()">
+                </div>
+                <button id="nextSlide" class="sliderButton">&gt;</button>
+            </div>
+            <div class="sliderScrollbar">
+                <div class="scrollbarTrack">
+                    <div class="scrollbarThumb"></div>
+                </div>
+            </div>
+        </div>
+    </article>
+
+    <footer id="footer">
+        <div class="containerFooter">
+            <p id="pFooter"><span id="footerGameLogs" onClick="topFunction()">Health</span><a
+                    href="https://www.linkedin.com/in/pawel-szabunio-223265234/" target="_blank"> | Paweł
+                    Szabunio</a><a href="https://www.facebook.com" target="_blank"><img src="svg/fb.png"
+                        class="contactIcons" id="fbLeft"></a><a href="https://www.youtube.com" target="_blank"><img
+                        src="svg/youtube.png" class="contactIcons"></a><a href="https://www.instagram.com"
+                    target="_blank"><img src="svg/insta.png" class="contactIcons"><a><a href="https://www.x.com"
+                            target="_blank"><img src="svg/x.png" class="contactIcons"></a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
